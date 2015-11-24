@@ -1,0 +1,144 @@
+/* =============================================================================
+  HTML5 element display
+========================================================================== */
+article, aside, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+  Reset
+========================================================================== */
+html {
+    height: 100%;
+
+}
+body {
+    min-height: 100%;
+    position: relative;
+}
+body:after {
+    content: "";
+    display: block;
+    height: 26px;
+}
+body, html, div, p, span, 
+h1, h2, h3, h4, h5,
+table, td, tr, th, 
+ul, ol, li, dl, dt, dd, 
+form, input, fieldset, label, legend, select, textarea,
+a, img, pre{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+}
+
+.top {
+    width: 940px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-color: #96dafb;
+}
+.small-red {
+    width: 63px;
+    height: 58px;
+    background-color: #cf6879;
+    float: left;
+    margin-right: 20px;
+}
+
+.small-red:last-child {
+    float: right;
+    margin-right: 0;
+}
+
+.middle {
+    width: 940px;
+    height: 213px;
+    background-color: #96dafb;
+    margin-top: 11px;
+}
+
+.big-red {
+    width: 138px;
+    height: 103px;
+    background-color: #cf6879;
+    float: left;
+    margin-right: 22.4px;
+    margin-top: 56px
+}
+
+.big-red:last-child {
+    margin-right: 0;
+}
+
+.huge-red {
+    width: 918px;
+    height: 236px;
+    background-color: #cf6879;
+    border: 11px solid #96dafb;
+    margin: 11px 0 20px 0;
+    
+}
+
+.green-top {
+    width: 138px;
+    height: 103px;
+    background-color: #57d775;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px; 
+
+}
+
+
+.yellow {
+    width: 116px;
+    height: 216px;
+    background-color: #e0cd4e;
+    float: left;
+    margin-top: -102px;
+    
+
+}
+
+
+.footer {
+    display: block;
+    width: 942px;
+    height: 26px;
+    background-color: #8f4ee0;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    overflow: hidden;
+}
+
+.navi-left{
+    width: 17px;
+    height: 166px;
+    background-color: #8f4ee0;
+    position: fixed;
+    top: 232px;    
+    left: 0;
+}
