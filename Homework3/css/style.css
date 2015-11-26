@@ -1,0 +1,375 @@
+/* =============================================================================
+  HTML5 element display
+========================================================================== */
+article, aside, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+  Reset
+========================================================================== */
+html {
+    height: 100%;
+
+}
+body {
+    min-height: 100%;
+    position: relative;
+}
+body:after {
+    content: "";
+    display: block;
+    height: 26px;
+}
+body, html, div, p, span, 
+h1, h2, h3, h4, h5,
+table, td, tr, th, 
+ul, ol, li, dl, dt, dd, 
+form, input, fieldset, label, legend, select, textarea,
+a, img, pre{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('../fonts/ufonts.com_gotham-book-webfont.eot');
+    src: url('../fonts/ufonts.com_gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts.com_gotham-book-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts.com_gotham-book-webfont.woff') format('woff'),
+         url('../fonts/ufonts.com_gotham-book-webfont.ttf') format('truetype'),
+         url('../fonts/ufonts.com_gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.intro-section {
+  position: relative;
+   background: url(../img/livello1.png) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 58vw;
+}
+
+/*.intro-section img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  top: 0;
+}*/
+
+.intro-section-content {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.main-nav {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main-nav li {
+  width: 16%;
+  float: left;
+  list-style: none;
+  margin-left: 4%;
+}
+
+/*.main-nav li:first-child {
+  margin-left:0; 
+}*/
+.main-nav li:nth-child(3n+1) {
+   margin-left:0;
+}
+
+.main-nav li  a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-family: 'gotham_bookregular';
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menu-items-middle a {
+  background-image: url("../img/sprite.png");
+  width: 60px;
+  height: 60px;
+  display: block;
+
+}
+
+.menu-items{
+  margin-top: 20px;
+}
+
+.page-title{
+    width: 80%;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    margin: 22% auto 0 auto;
+    text-align: center;
+}
+
+.page-title h1{
+    color: white;
+    text-decoration: none;
+    font-family: 'gotham_bookregular';
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.page-title h2{
+  color: white;
+  text-decoration: none;
+  font-family: 'gotham_bookregular';
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.get-started{
+  margin-top: 20px;
+  width: 166px;
+  height: 50px;
+  background-color: #16a085;
+  font-family: 'gotham_bookregular';
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  outline: none;
+  
+}
+
+.social{
+    width: 100px;
+    margin: 380px auto 0 auto;
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.social ul{
+  left: 50%;
+}
+
+.social ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.social ul li a {
+  width: 26px;
+  height: 27px;
+  display: inline-block;
+}
+
+.twitter{
+   background: url("../img/sprite.png") -1px -71px;
+  }
+
+.social2{
+   background: url("../img/sprite.png") -36px -71px;
+  }
+
+.social3{
+   background: url("../img/sprite.png") -72px -71px;
+  }
+
+.simple-photo{
+  position: relative;
+  background: url(../img/iphone-in-hand.png) no-repeat ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 38vw;
+}
+
+
+.info{
+  width: 420px;
+  height: auto;
+}
+.info h2{
+  color: #16a085;
+  text-decoration: none;
+  font-family: 'gotham_bookregular';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-left: 84px;
+  margin-top: 8px;
+  text-transform: uppercase;
+  padding-top:20%;
+
+}
+
+.info p{
+    color: black;
+  text-decoration: none;
+  font-family: 'gotham_bookregular';
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 84px;
+  margin-top: 8px;
+  padding-top:30px;
+  letter-spacing: 1px;
+
+
+}
+
+#second{
+  margin-left: 20%;
+  margin-top: 10%;
+
+}
+
+.grn-iphone{
+  position: relative;
+  background: url(../img/grn-phone.png) no-repeat ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 43vw;
+}
+
+  .design h2 {
+  color: #16a085;
+  text-decoration: none;
+  font-family: 'gotham_bookregular';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-left: 84px;
+  margin-top: 8px;
+  text-transform: uppercase;
+  padding-top:20%;
+
+}
+
+.design p{
+  color: black;
+  text-decoration: none;
+  font-family: 'gotham_bookregular';
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 84px;
+  margin-top: 8px;
+  padding-top:30px;
+  letter-spacing: 1px;
+}
+
+.design{
+  width: 448px;
+  height: auto;
+  float: right;
+  margin-top: 7%;
+  margin-right: 4%
+}
+
+  #third{
+  margin-left: 20%;
+  margin-top: 10%;
+
+}
+
+.gray-slider{
+  width: 100%;
+  height:auto;
+  position: relative;
+  background-color: #f5f6f7;
+  overflow: hidden;
+  padding-top: 9%;
+  padding-left: 5%;
+
+}
+
+.community{
+  width: 250px;
+  height: auto;
+  float: left;
+
+}
+
+.camera{
+  width: 62px;
+  height: 58px;
+  display: inline-block;
+  background: url("../img/sprite.png") -60px 0px;
+  margin-left: 50%
+
+}
+
+.community h2{
+    color: #767777;
+  text-decoration: none;
+  font-family: 'gotham_bookregular';
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-left: 84px;
+  text-transform: uppercase;
+  padding-top:6%;
+}
+
+.community p{
+  color: #767777;
+  text-decoration: none;
+  font-family: 'gotham_bookregular';
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 84px;
+  margin-top: 8px;
+  padding-top:30px;
+}
+
+.van{
+ float: left;
+ margin-right: 20px;
+ padding-left: 20%;
+ padding-bottom: 8%;
+}
+
+.autnum{
+float: left;
+margin-right: 20px;
+}
+
